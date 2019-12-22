@@ -47,12 +47,10 @@ intersection = wire_one_coords.intersection(wire_two_coords)
 
 wire_one_steps_dict = count_steps(wire_one_coords_list[1:], intersection)
 wire_one_steps = list(wire_one_steps_dict.values())
-print(wire_one_steps_dict)
+
 
 wire_two_steps_dict = count_steps(wire_two_coords_list[1:], intersection)
 wire_two_steps = list(wire_two_steps_dict.values())
-print(wire_two_steps_dict)
-
 
 result = [wire_one_steps[i] + wire_two_steps[i]
           for i in range(0, len(wire_one_steps))]
