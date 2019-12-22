@@ -42,6 +42,7 @@ def get_result(input_arr):
                 i += 4
             if arr[0] == 19690720:
                 print(x1, x2)
+                #40, 19
 
 
 get_result(puzzle_input)
